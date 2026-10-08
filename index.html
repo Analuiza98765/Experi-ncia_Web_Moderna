@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Biblioteca Digital UniFECAF: encontre livros, explore categorias e descubra materiais para seus estudos.">
+  <title>Biblioteca Digital | UniFECAF</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a class="marca" href="#" aria-label="Biblioteca Digital UniFECAF - página inicial">
+        <span class="marca-simbolo" aria-hidden="true">U</span>
+        <span class="marca-texto">Uni<span>FECAF</span><small>Biblioteca Digital</small></span>
+      </a>
+      <nav class="navegacao" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#destaques">Livros em destaque</a>
+        <a href="#servicos">A biblioteca</a>
+      </nav>
+      <a class="botao botao-topo" href="#destaques">Explorar acervo <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero-grade">
+        <div class="hero-texto">
+          <span class="etiqueta"><span class="ponto"></span> Conhecimento ao seu alcance</span>
+          <h1>Seu próximo aprendizado <em>começa aqui.</em></h1>
+          <p>Explore livros, descubra novas ideias e encontre conteúdos para acompanhar sua jornada acadêmica.</p>
+          <form class="busca" role="search" action="#destaques">
+            <label class="sr-only" for="pesquisa">Buscar livros ou assuntos</label>
+            <span class="icone-busca" aria-hidden="true">⌕</span>
+            <input id="pesquisa" type="search" placeholder="Busque por título, autor ou assunto...">
+            <button type="submit">Buscar</button>
+          </form>
+          <div class="hero-nota"><span aria-hidden="true">✦</span> Um espaço para aprender no seu ritmo.</div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustração de livros e materiais de estudo">
+          <div class="forma forma-1"></div>
+          <div class="forma forma-2"></div>
+          <div class="cartao-livro cartao-atras">
+            <div class="capa capa-verde"><span>IDEIAS<br>QUE<br>TRANSFORMAM</span><small>LEITURA &amp; CULTURA</small></div>
+          </div>
+          <div class="cartao-livro cartao-frente">
+            <div class="capa capa-creme"><span>O PODER<br>DO<br>CONHECIMENTO</span><small>GUIA DE ESTUDOS</small></div>
+          </div>
+          <div class="selo">LEIA.<br>APRENDA.<br>EVOLUA.</div>
+          <span class="estrela estrela-a" aria-hidden="true">✳</span>
+          <span class="estrela estrela-b" aria-hidden="true">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="beneficios" aria-label="Benefícios da biblioteca">
+      <div class="container beneficios-grade">
+        <div><span class="beneficio-icone">⌕</span><p><strong>Encontre com facilidade</strong><small>Busca simples e intuitiva</small></p></div>
+        <div><span class="beneficio-icone">▤</span><p><strong>Explore assuntos</strong><small>Categorias para cada interesse</small></p></div>
+        <div><span class="beneficio-icone">◷</span><p><strong>Estude no seu ritmo</strong><small>Conhecimento sempre em foco</small></p></div>
+      </div>
+    </section>
+
+    <section class="secao categorias" id="categorias">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <div><span class="sobretitulo">EXPLORE O ACERVO</span><h2>O que você quer <em>aprender hoje?</em></h2></div>
+          <p>Encontre conteúdos que acompanham seus interesses e objetivos acadêmicos.</p>
+        </div>
+        <div class="categorias-grade">
+          <a class="categoria categoria-destaque" href="#destaques"><span class="categoria-icone">⌘</span><span><strong>Tecnologia</strong><small>Computação e inovação</small></span><b aria-hidden="true">↗</b></a>
+          <a class="categoria" href="#destaques"><span class="categoria-icone icone-azul">▤</span><span><strong>Negócios</strong><small>Gestão e empreendedorismo</small></span><b aria-hidden="true">↗</b></a>
+          <a class="categoria" href="#destaques"><span class="categoria-icone icone-laranja">✎</span><span><strong>Comunicação</strong><small>Design e criatividade</small></span><b aria-hidden="true">↗</b></a>
+          <a class="categoria" href="#destaques"><span class="categoria-icone icone-roxo">⌬</span><span><strong>Ciências humanas</strong><small>Sociedade e comportamento</small></span><b aria-hidden="true">↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-destaques" id="destaques">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <div><span class="sobretitulo">SUGESTÕES PARA VOCÊ</span><h2>Livros em <em>destaque</em></h2></div>
+          <a class="link-seta" href="#servicos">Conheça a biblioteca <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="livros-grade">
+          <article class="livro">
+            <div class="livro-capa capa-1"><span class="capa-marca">IDEIAS<br>EM<br>CÓDIGO</span><span class="capa-detalhe">TECNOLOGIA</span></div>
+            <div class="livro-info"><span class="livro-categoria">TECNOLOGIA</span><h3>Introdução à programação</h3><p>Conceitos fundamentais para começar a criar.</p><a href="#servicos" aria-label="Saiba mais sobre Introdução à programação">Ver detalhes <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="livro">
+            <div class="livro-capa capa-2"><span class="capa-marca">PENSAR<br>DESIGN</span><span class="capa-detalhe">CRIATIVIDADE</span></div>
+            <div class="livro-info"><span class="livro-categoria">DESIGN</span><h3>Design e experiência do usuário</h3><p>Ideias para criar experiências melhores.</p><a href="#servicos" aria-label="Saiba mais sobre Design e experiência do usuário">Ver detalhes <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="livro">
+            <div class="livro-capa capa-3"><span class="capa-marca">GESTÃO<br>EM FOCO</span><span class="capa-detalhe">NEGÓCIOS</span></div>
+            <div class="livro-info"><span class="livro-categoria">NEGÓCIOS</span><h3>Fundamentos de gestão</h3><p>Organização, planejamento e liderança.</p><a href="#servicos" aria-label="Saiba mais sobre Fundamentos de gestão">Ver detalhes <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="livro">
+            <div class="livro-capa capa-4"><span class="capa-marca">O MUNDO<br>EM IDEIAS</span><span class="capa-detalhe">HUMANIDADES</span></div>
+            <div class="livro-info"><span class="livro-categoria">HUMANIDADES</span><h3>Sociedade e comportamento</h3><p>Reflexões sobre pessoas e sociedade.</p><a href="#servicos" aria-label="Saiba mais sobre Sociedade e comportamento">Ver detalhes <span aria-hidden="true">→</span></a></div>
+          </article>
+        </div>
+        <p class="aviso-acervo">Exemplos ilustrativos para a apresentação visual. Substitua pelos títulos e dados reais do acervo, se disponíveis.</p>
+      </div>
+    </section>
+
+    <section class="chamada" id="servicos">
+      <div class="container chamada-conteudo">
+        <div><span class="sobretitulo">SUA JORNADA DE APRENDIZADO</span><h2>Grandes ideias começam com <em>uma página.</em></h2><p>A biblioteca é um espaço para apoiar seus estudos, ampliar repertórios e incentivar a descoberta.</p></div>
+        <a class="botao botao-claro" href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <a class="marca marca-rodape" href="#inicio"><span class="marca-simbolo" aria-hidden="true">U</span><span class="marca-texto">Uni<span>FECAF</span><small>Biblioteca Digital</small></span></a>
+      <p>Uma experiência digital para aproximar você do conhecimento.</p>
+      <span>Projeto acadêmico · Design Web</span>
+    </div>
+  </footer>
+</body>
+</html>
