@@ -1,127 +1,376 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Biblioteca Digital UniFECAF: encontre livros, explore categorias e descubra materiais para seus estudos.">
-  <title>Biblioteca Digital | UniFECAF</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Biblioteca Digital UniFECAF: encontre livros, explore categorias e descubra materiais para seus estudos."
+    >
+    <title>Biblioteca Digital | UniFECAF</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="topo">
-    <div class="container topo-conteudo">
-      <a class="marca" href="#" aria-label="Biblioteca Digital UniFECAF - página inicial">
-        <span class="marca-simbolo" aria-hidden="true">U</span>
-        <span class="marca-texto">Uni<span>FECAF</span><small>Biblioteca Digital</small></span>
-      </a>
-      <nav class="navegacao" aria-label="Navegação principal">
-        <a href="#inicio">Início</a>
-        <a href="#categorias">Categorias</a>
-        <a href="#destaques">Livros em destaque</a>
-        <a href="#servicos">A biblioteca</a>
-      </nav>
-      <a class="botao botao-topo" href="#destaques">Explorar acervo <span aria-hidden="true">↗</span></a>
-    </div>
-  </header>
+    <header class="topo">
+      <div class="container topo-conteudo">
+        <a class="marca" href="#inicio" aria-label="Biblioteca UniFECAF, início">
+          <span class="marca-simbolo" aria-hidden="true">U</span>
+          <span>
+            <strong>UniFECAF</strong>
+            <small>Biblioteca</small>
+          </span>
+        </a>
 
-  <main id="conteudo">
-    <section class="hero" id="inicio">
-      <div class="container hero-grade">
-        <div class="hero-texto">
-          <span class="etiqueta"><span class="ponto"></span> Conhecimento ao seu alcance</span>
-          <h1>Seu próximo aprendizado <em>começa aqui.</em></h1>
-          <p>Explore livros, descubra novas ideias e encontre conteúdos para acompanhar sua jornada acadêmica.</p>
-          <form class="busca" role="search" action="#destaques">
-            <label class="sr-only" for="pesquisa">Buscar livros ou assuntos</label>
-            <span class="icone-busca" aria-hidden="true">⌕</span>
-            <input id="pesquisa" type="search" placeholder="Busque por título, autor ou assunto...">
-            <button type="submit">Buscar</button>
-          </form>
-          <div class="hero-nota"><span aria-hidden="true">✦</span> Um espaço para aprender no seu ritmo.</div>
+        <nav class="navegacao" aria-label="Navegação principal">
+          <a href="#biblioteca">Biblioteca</a>
+          <a href="#livros">Livros</a>
+          <a href="#unidades">Unidades</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <a class="botao botao-nav" href="#livros">
+          Explorar acervo <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+        <img
+          class="hero-imagem"
+          src="assets/imagens/biblioteca-hero.jpg"
+          alt="Interior amplo de uma biblioteca com estantes de livros"
+          fetchpriority="high"
+        >
+        <div class="hero-sombra"></div>
+        <div class="container hero-conteudo">
+          <p class="sobretitulo">BIBLIOTECA UNIFECAF</p>
+          <h1 id="titulo-principal">
+            Conhecimento<br>
+            <em>para ir mais longe.</em>
+          </h1>
+          <p>Um espaço para descobrir ideias, aprofundar estudos e abrir novos caminhos.</p>
+          <a class="botao botao-claro" href="#livros">
+            Descubra o acervo <span aria-hidden="true">↓</span>
+          </a>
         </div>
-        <div class="hero-visual" aria-label="Ilustração de livros e materiais de estudo">
-          <div class="forma forma-1"></div>
-          <div class="forma forma-2"></div>
-          <div class="cartao-livro cartao-atras">
-            <div class="capa capa-verde"><span>IDEIAS<br>QUE<br>TRANSFORMAM</span><small>LEITURA &amp; CULTURA</small></div>
+        <span class="hero-indice">01 <i></i> 04</span>
+      </section>
+
+      <section class="secao sobre" id="biblioteca">
+        <div class="container">
+          <div class="sobre-intro">
+            <div>
+              <p class="sobretitulo">UM LUGAR PARA DESCOBRIR</p>
+              <h2>
+                Mais do que livros.<br>
+                <em>Novas possibilidades.</em>
+              </h2>
+            </div>
+            <div class="sobre-texto">
+              <p>
+                A biblioteca é parte viva da experiência universitária: um lugar
+                para pesquisar, trocar ideias e encontrar inspiração em cada
+                página.
+              </p>
+              <a class="link-seta" href="#unidades">
+                Conheça nossos espaços <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
-          <div class="cartao-livro cartao-frente">
-            <div class="capa capa-creme"><span>O PODER<br>DO<br>CONHECIMENTO</span><small>GUIA DE ESTUDOS</small></div>
+
+          <div class="galeria" aria-label="Espaços da biblioteca">
+            <figure class="galeria-item">
+              <img
+                class="galeria-imagem"
+                src="assets/imagens/estante-livros.jpg"
+                alt="Estantes de livros em uma biblioteca"
+                loading="lazy"
+              >
+              <figcaption>Um acervo para explorar</figcaption>
+            </figure>
+            <figure class="galeria-item">
+              <img
+                class="galeria-imagem"
+                src="assets/imagens/pessoa-lendo.jpg"
+                alt="Pessoa lendo um livro perto da janela"
+                loading="lazy"
+              >
+              <figcaption>Tempo para se concentrar</figcaption>
+            </figure>
+            <figure class="galeria-item">
+              <img
+                class="galeria-imagem"
+                src="assets/imagens/biblioteca-acervo.jpg"
+                alt="Livros organizados nas prateleiras"
+                loading="lazy"
+              >
+              <figcaption>Ideias em cada página</figcaption>
+            </figure>
+            <figure class="galeria-item">
+              <img
+                class="galeria-imagem"
+                src="assets/imagens/estudantes.jpg"
+                alt="Estudantes reunidos em uma mesa de estudos"
+                loading="lazy"
+              >
+              <figcaption>Aprender também é compartilhar</figcaption>
+            </figure>
           </div>
-          <div class="selo">LEIA.<br>APRENDA.<br>EVOLUA.</div>
-          <span class="estrela estrela-a" aria-hidden="true">✳</span>
-          <span class="estrela estrela-b" aria-hidden="true">✦</span>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="beneficios" aria-label="Benefícios da biblioteca">
-      <div class="container beneficios-grade">
-        <div><span class="beneficio-icone">⌕</span><p><strong>Encontre com facilidade</strong><small>Busca simples e intuitiva</small></p></div>
-        <div><span class="beneficio-icone">▤</span><p><strong>Explore assuntos</strong><small>Categorias para cada interesse</small></p></div>
-        <div><span class="beneficio-icone">◷</span><p><strong>Estude no seu ritmo</strong><small>Conhecimento sempre em foco</small></p></div>
-      </div>
-    </section>
-
-    <section class="secao categorias" id="categorias">
-      <div class="container">
-        <div class="cabecalho-secao">
-          <div><span class="sobretitulo">EXPLORE O ACERVO</span><h2>O que você quer <em>aprender hoje?</em></h2></div>
-          <p>Encontre conteúdos que acompanham seus interesses e objetivos acadêmicos.</p>
+      <section class="destaque-imagem" aria-label="Leitura e descoberta">
+        <img
+          class="imagem-ampla"
+          src="assets/imagens/mesa-janela.jpg"
+          alt="Mesa de leitura junto a uma janela com luz natural"
+          loading="lazy"
+        >
+        <div class="destaque-legenda">
+          <span>PAUSA PARA LER</span>
+          <p>Às vezes, uma nova ideia começa no silêncio.</p>
         </div>
-        <div class="categorias-grade">
-          <a class="categoria categoria-destaque" href="#destaques"><span class="categoria-icone">⌘</span><span><strong>Tecnologia</strong><small>Computação e inovação</small></span><b aria-hidden="true">↗</b></a>
-          <a class="categoria" href="#destaques"><span class="categoria-icone icone-azul">▤</span><span><strong>Negócios</strong><small>Gestão e empreendedorismo</small></span><b aria-hidden="true">↗</b></a>
-          <a class="categoria" href="#destaques"><span class="categoria-icone icone-laranja">✎</span><span><strong>Comunicação</strong><small>Design e criatividade</small></span><b aria-hidden="true">↗</b></a>
-          <a class="categoria" href="#destaques"><span class="categoria-icone icone-roxo">⌬</span><span><strong>Ciências humanas</strong><small>Sociedade e comportamento</small></span><b aria-hidden="true">↗</b></a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="secao secao-destaques" id="destaques">
-      <div class="container">
-        <div class="cabecalho-secao">
-          <div><span class="sobretitulo">SUGESTÕES PARA VOCÊ</span><h2>Livros em <em>destaque</em></h2></div>
-          <a class="link-seta" href="#servicos">Conheça a biblioteca <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="livros-grade">
-          <article class="livro">
-            <div class="livro-capa capa-1"><span class="capa-marca">IDEIAS<br>EM<br>CÓDIGO</span><span class="capa-detalhe">TECNOLOGIA</span></div>
-            <div class="livro-info"><span class="livro-categoria">TECNOLOGIA</span><h3>Introdução à programação</h3><p>Conceitos fundamentais para começar a criar.</p><a href="#servicos" aria-label="Saiba mais sobre Introdução à programação">Ver detalhes <span aria-hidden="true">→</span></a></div>
-          </article>
-          <article class="livro">
-            <div class="livro-capa capa-2"><span class="capa-marca">PENSAR<br>DESIGN</span><span class="capa-detalhe">CRIATIVIDADE</span></div>
-            <div class="livro-info"><span class="livro-categoria">DESIGN</span><h3>Design e experiência do usuário</h3><p>Ideias para criar experiências melhores.</p><a href="#servicos" aria-label="Saiba mais sobre Design e experiência do usuário">Ver detalhes <span aria-hidden="true">→</span></a></div>
-          </article>
-          <article class="livro">
-            <div class="livro-capa capa-3"><span class="capa-marca">GESTÃO<br>EM FOCO</span><span class="capa-detalhe">NEGÓCIOS</span></div>
-            <div class="livro-info"><span class="livro-categoria">NEGÓCIOS</span><h3>Fundamentos de gestão</h3><p>Organização, planejamento e liderança.</p><a href="#servicos" aria-label="Saiba mais sobre Fundamentos de gestão">Ver detalhes <span aria-hidden="true">→</span></a></div>
-          </article>
-          <article class="livro">
-            <div class="livro-capa capa-4"><span class="capa-marca">O MUNDO<br>EM IDEIAS</span><span class="capa-detalhe">HUMANIDADES</span></div>
-            <div class="livro-info"><span class="livro-categoria">HUMANIDADES</span><h3>Sociedade e comportamento</h3><p>Reflexões sobre pessoas e sociedade.</p><a href="#servicos" aria-label="Saiba mais sobre Sociedade e comportamento">Ver detalhes <span aria-hidden="true">→</span></a></div>
-          </article>
-        </div>
-        <p class="aviso-acervo">Exemplos ilustrativos para a apresentação visual. Substitua pelos títulos e dados reais do acervo, se disponíveis.</p>
-      </div>
-    </section>
+      <section class="secao livros" id="livros">
+        <div class="container">
+          <div class="cabecalho-secao">
+            <div>
+              <p class="sobretitulo">ESCOLHAS PARA SUA PRÓXIMA LEITURA</p>
+              <h2>Histórias que <em>ficam com você.</em></h2>
+            </div>
+            <a class="link-seta" href="#contato">
+              Ver todo o acervo <span aria-hidden="true">↗</span>
+            </a>
+          </div>
 
-    <section class="chamada" id="servicos">
-      <div class="container chamada-conteudo">
-        <div><span class="sobretitulo">SUA JORNADA DE APRENDIZADO</span><h2>Grandes ideias começam com <em>uma página.</em></h2><p>A biblioteca é um espaço para apoiar seus estudos, ampliar repertórios e incentivar a descoberta.</p></div>
-        <a class="botao botao-claro" href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
-      </div>
-    </section>
-  </main>
+          <div class="livros-grade">
+            <article class="livro">
+              <img
+                class="livro-imagem"
+                src="assets/imagens/descoberta.jpg"
+                alt="Livro aberto sobre uma mesa"
+                loading="lazy"
+              >
+              <div class="livro-info">
+                <span class="livro-categoria">LITERATURA</span>
+                <h3>O prazer da leitura</h3>
+                <p>Uma porta de entrada para novas histórias, lugares e perspectivas.</p>
+                <a href="#contato">
+                  Descobrir livro <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+            <article class="livro">
+              <img
+                class="livro-imagem"
+                src="assets/imagens/tecnologia.jpg"
+                alt="Livros e materiais sobre tecnologia"
+                loading="lazy"
+              >
+              <div class="livro-info">
+                <span class="livro-categoria">DESENVOLVIMENTO</span>
+                <h3>Ideias em movimento</h3>
+                <p>Leituras para ampliar repertório e transformar conhecimento em ação.</p>
+                <a href="#contato">
+                  Descobrir livro <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+            <article class="livro">
+              <img
+                class="livro-imagem"
+                src="assets/imagens/humanidades.jpg"
+                alt="Livros relacionados a cultura e humanidades"
+                loading="lazy"
+              >
+              <div class="livro-info">
+                <span class="livro-categoria">HUMANIDADES</span>
+                <h3>O mundo em perspectiva</h3>
+                <p>
+                  Novos olhares sobre cultura, sociedade e as relações que nos
+                  formam.
+                </p>
+                <a href="#contato">
+                  Descobrir livro <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+            <article class="livro">
+              <img
+                class="livro-imagem"
+                src="assets/imagens/negocios.jpg"
+                alt="Livros e anotações sobre negócios"
+                loading="lazy"
+              >
+              <div class="livro-info">
+                <span class="livro-categoria">NEGÓCIOS</span>
+                <h3>Construindo caminhos</h3>
+                <p>
+                  Princípios e ferramentas para pensar projetos, equipes e futuro.
+                </p>
+                <a href="#contato">
+                  Descobrir livro <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+            <article class="livro">
+              <img
+                class="livro-imagem"
+                src="assets/imagens/mesa-estudo.jpg"
+                alt="Livro e caderno preparados para estudo"
+                loading="lazy"
+              >
+              <div class="livro-info">
+                <span class="livro-categoria">CIÊNCIA</span>
+                <h3>Perguntas essenciais</h3>
+                <p>
+                  Curiosidade e pensamento crítico para investigar o que nos
+                  cerca.
+                </p>
+                <a href="#contato">
+                  Descobrir livro <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+            <article class="livro">
+              <img
+                class="livro-imagem"
+                src="assets/imagens/design.jpg"
+                alt="Livro aberto e materiais de estudo"
+                loading="lazy"
+              >
+              <div class="livro-info">
+                <span class="livro-categoria">EDUCAÇÃO</span>
+                <h3>Aprender sempre</h3>
+                <p>
+                  Uma reflexão sobre a aprendizagem que acompanha toda a vida.
+                </p>
+                <a href="#contato">
+                  Descobrir livro <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-  <footer class="rodape">
-    <div class="container rodape-conteudo">
-      <a class="marca marca-rodape" href="#inicio"><span class="marca-simbolo" aria-hidden="true">U</span><span class="marca-texto">Uni<span>FECAF</span><small>Biblioteca Digital</small></span></a>
-      <p>Uma experiência digital para aproximar você do conhecimento.</p>
-      <span>Projeto acadêmico · Design Web</span>
-    </div>
-  </footer>
-</body>
+      <section class="secao unidades" id="unidades">
+        <div class="container">
+          <div class="cabecalho-secao">
+            <div>
+              <p class="sobretitulo">ESPAÇOS PARA APRENDER</p>
+              <h2 class="titulo-unidades">
+                A biblioteca acontece<br>
+                <em>em muitos lugares.</em>
+              </h2>
+            </div>
+            <p class="unidades-resumo">
+              Encontre seu canto favorito para estudar, pesquisar ou simplesmente
+              virar mais uma página.
+            </p>
+          </div>
+
+          <div class="unidades-grade">
+            <div class="unidades-galeria">
+              <img
+                class="unidade-imagem"
+                src="assets/imagens/estantes-altas.jpg"
+                alt="Estantes altas em uma biblioteca"
+                loading="lazy"
+              >
+              <img
+                class="unidade-imagem"
+                src="assets/imagens/sala-leitura.jpg"
+                alt="Sala de leitura com mesas e livros"
+                loading="lazy"
+              >
+              <img
+                class="unidade-imagem"
+                src="assets/imagens/mesa-estudo.jpg"
+                alt="Mesa de estudos com livros e anotações"
+                loading="lazy"
+              >
+            </div>
+            <div class="unidades-lista">
+              <article>
+                <span class="unidade-numero">01 / ACERVO</span>
+                <h3>Histórias para levar</h3>
+                <p>
+                  Explore títulos de diferentes áreas e encontre leituras que
+                  acompanham seus estudos.
+                </p>
+                <a class="link-seta" href="#livros">
+                  Explorar livros <span aria-hidden="true">↗</span>
+                </a>
+              </article>
+              <article>
+                <span class="unidade-numero">02 / ESTUDO</span>
+                <h3>Espaço para focar</h3>
+                <p>
+                  Um ambiente acolhedor para se concentrar, pesquisar e seguir
+                  suas ideias com calma.
+                </p>
+                <a class="link-seta" href="#contato">
+                  Conhecer espaços <span aria-hidden="true">↗</span>
+                </a>
+              </article>
+              <article>
+                <span class="unidade-numero">03 / ENCONTRO</span>
+                <h3>Conhecimento em comum</h3>
+                <p>
+                  Compartilhe descobertas e construa novas perspectivas junto à
+                  comunidade acadêmica.
+                </p>
+                <a class="link-seta" href="#contato">
+                  Saiba mais <span aria-hidden="true">↗</span>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao contato" id="contato">
+        <div class="container contato-grade">
+          <div class="contato-texto">
+            <p class="sobretitulo">SUA PRÓXIMA DESCOBERTA COMEÇA AQUI</p>
+            <h2>
+              Que tal escolher<br>
+              <em>sua próxima leitura?</em>
+            </h2>
+            <p>
+              Explore o acervo e encontre uma nova ideia para levar com você.
+            </p>
+            <a class="botao botao-escuro" href="#livros">
+              Encontrar meu próximo livro <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <img
+            class="contato-imagem"
+            src="assets/imagens/pessoa-lendo.jpg"
+            alt="Pessoa folheando um livro em uma biblioteca"
+            loading="lazy"
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container rodape-conteudo">
+        <a class="marca marca-rodape" href="#inicio">
+          <span class="marca-simbolo" aria-hidden="true">U</span>
+          <span>
+            <strong>UniFECAF</strong>
+            <small>Biblioteca</small>
+          </span>
+        </a>
+        <span>Conhecimento para todos.</span>
+        <a href="#inicio">Voltar ao topo ↑</a>
+      </div>
+    </footer>
+  </body>
 </html>
